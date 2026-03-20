@@ -1,11 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Card = () => {
+const Card = ({title,description}) => {
   return (
     <StyledWrapper>
       <div className="card">
-        <div className="bg" />
+        <div className="bg">
+          <h3>{title}</h3>
+          <p>{description}</p>
+        </div>
         <div className="blob" />
       </div>
     </StyledWrapper>
@@ -30,9 +33,14 @@ const StyledWrapper = styled.div`
 
   .bg {
   padding: 20px;        
-  box-sizing: border-box;   
+  box-sizing: border-box;
+  h3{
+    font-size: 23px;
+    margin-bottom: 30px; 
+  }  
 
   display: flex; 
+  flex-direction:column;
     position: absolute;
     top: 5px;
     left: 5px;

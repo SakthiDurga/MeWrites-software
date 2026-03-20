@@ -1,7 +1,8 @@
 import React from 'react'
 import "./Landing.css";
 import Illustration from '../../assets/writer-illustration.png'
-import FeatureCard from "../../components/FeatureCard";
+import FeatureCard from "../../components/FeatureCard"
+import AboutCard from "../../components/AboutCard"
 
 const features = [
   {
@@ -57,7 +58,11 @@ const Landing = () => {
         </div>
       </section>
 
-      
+      <section className="about" id='about'>
+        <h2>About</h2>
+        <AboutCard/>
+      </section>
+
     </div>
   )
 }
