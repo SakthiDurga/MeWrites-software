@@ -58,11 +58,10 @@ const Landing = () => {
         </div>
       </section>
 
+      <h2 className='aboutTitle'>About</h2>
       <section className="about" id='about'>
-        <h2>About</h2>
         <AboutCard/>
       </section>
-
     </div>
   )
 }

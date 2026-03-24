@@ -66,10 +66,11 @@
         margin-bottom: 100px;
     }
 }
-
+.aboutTitle{
+    font-size: 80px;
+    color: #fbb636;
+    margin-bottom: 70px;
+}
 .about{
-    h2{
-        font-size: 80px;
-        color: #fbb636;
-    }
+    margin-bottom: 100px;
 }
