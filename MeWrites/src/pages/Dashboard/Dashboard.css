@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Almendra+SC&family=Playfair+Display+SC&display=swap');
+
+.dashboard {
+    width: 100vw;
+    height: 100vh;
+    background-color: #F2BFA4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    font-family: "Almendra SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px;
+    color: #553700;
+    margin-bottom: 100px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button {
+        width: 150px;
+        height: 50px;
+        margin-right: 20px;
+        border: 2px solid white;
+        border-radius: 10px;
+        font-size: 20px;
+        color: #553700;
+    }
+
+    button:hover {
+        background-color: #F2BFA4;
+        border: 2px solid #553700;
+        color: #553700;
+    }
+}
+
+.create-btn {
+    width: 500px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: -15px;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #553700;
+    align-items: center;
+}
+
+.create-btn:hover {
+    background-color: #F2BFA4;
+    border: 2px solid #553700;
+    color: #553700;
+}
+
+.lists {
+    width: 500px;
+    height: 200px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+
+    .card {
+        background-color: #F2BFA4;
+        border: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    button {
+        height: 50px;
+        width: 100px;
+        border: 2px solid white;
+        border-radius: 10px;
+        font-size: 20px;
+        color: #553700;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    button:hover {
+        background-color: #F2BFA4;
+        border: 2px solid #553700;
+        color: #553700;
+    }
+}

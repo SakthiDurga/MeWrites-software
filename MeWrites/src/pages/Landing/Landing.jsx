@@ -2,7 +2,9 @@ import React from 'react'
 import "./Landing.css";
 import Illustration from '../../assets/writer-illustration.png'
 import FeatureCard from "../../components/FeatureCard"
-import AboutCard from "../../components/AboutCard"
+import AboutCard from "../../AboutCard/AboutCard"
+import Navbar from "../../components/Navbar/Navbar"
+import Footer from "../../components/Footer/Footer"
 
 const features = [
   {
@@ -30,7 +32,9 @@ const features = [
 
 const Landing = () => {
   return (
-    <div className='landing'>
+    <div className='landing-container'>
+      <Navbar/>
+      <div className="landing">
       <section id='home' className='hero'>
         <div className='hero-txt'>
           <h1>Carve Your Dreams<br /> Into Novels</h1>
@@ -62,6 +66,8 @@ const Landing = () => {
       <section className="about" id='about'>
         <AboutCard/>
       </section>
+      </div>
+      <Footer/>
     </div>
   )
 }

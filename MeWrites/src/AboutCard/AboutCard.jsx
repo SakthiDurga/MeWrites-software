@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { CTab, CTabContent, CTabList, CTabPanel, CTabs } from '@coreui/react'
+import './AboutCard.css'
 
 const AboutCard = () => {
   const [activeTab, setActiveTab] = useState("novel")
@@ -13,7 +14,7 @@ const AboutCard = () => {
         <CTab itemKey="quote">Quote 💬</CTab>
       </CTabList>
 
-      <CTabContent>
+      <CTabContent >
         <CTabPanel className="p-3" itemKey="novel">
           A reader lives a thousand lives but a writer captures millions of possibilities of a life ✎
         </CTabPanel>

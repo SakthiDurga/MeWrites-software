@@ -71,6 +71,9 @@
     color: #fbb636;
     margin-bottom: 70px;
 }
-.about{
-    margin-bottom: 100px;
+.about-section{
+  width: 80%;
+  padding: 80px 80px;
+  display: flex;
+  margin-top: -60px;
 }

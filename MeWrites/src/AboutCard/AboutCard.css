@@ -1,0 +1,22 @@
+.nav-tabs{
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.nav-tabs .nav-link{
+  font-size: 1.5rem;
+  padding: 15px 40px;
+}
+.p-3{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.8;
+}
+.ctab-panel{
+  padding: 40px;
+}

@@ -1,15 +1,16 @@
-import Navbar from "./components/Navbar/Navbar"
 import Landing from "./pages/Landing/Landing"
-import Footer from "./components/Footer/Footer"
-
+import Auth from "./pages/Auth/Auth"
+import { Routes, Route } from "react-router-dom"
+import Dashboard from "./pages/Dashboard/Dashboard"
 function App() {
   
   return (
     <>
-      
-      <Navbar/>
-      <Landing/>
-      <Footer/>
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/auth" element={<Auth />} />
+        <Route path="/dashboard" element={<Dashboard/>} />
+      </Routes>
     </>
   )
 }
