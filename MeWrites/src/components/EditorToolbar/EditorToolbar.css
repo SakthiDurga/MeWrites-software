@@ -1,0 +1,24 @@
+.editor-toolbar{
+    width: 70vw;
+    height: 40px;
+    background-color: #F2BFA4 !important;
+    margin-left: 8vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    button{
+        border: 2px solid #553700;
+        background: none;
+        height: 33px;
+        color: #553700;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 17px;
+        margin-left: 10px;
+    }
+    button:hover{
+        background-color: #553700;
+        border: 2px solid #F2BFA4;
+        color: #F2BFA4;
+    }
+}

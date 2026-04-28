@@ -2,13 +2,15 @@ import React from 'react'
 import "./EditorToolbar.css";
 
 const EditorToolbar = ({content,setContent}) => {
-  const insertText = (text) => {setContent(content+text)};
+  const format = (command, value = null) => {
+    document.execCommand(command, false, value);
+  }
   return (
     <div className='editor-toolbar'>
-      <button onClick={()=>insertText(" **bold** ")}>B</button>
-      <button onClick={()=> insertText(" _italic_ ")}>I</button>
-      <button onClick={()=> insertText("\n# Heading\n")}>H</button>
-      <button onClick={()=> insertText(" \n- point\n")}>List</button>
+      <button onClick={()=>format("bold")}>B</button>
+      <button onClick={()=>format("italic")}>I</button>
+      <button onClick={()=>format("insertUnorderedList")}>• List</button>
+      <button onClick={()=>format("formatBlock","h1")}>H</button>
     </div>
   )
 }

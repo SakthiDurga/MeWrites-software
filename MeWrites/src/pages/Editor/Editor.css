@@ -1,6 +1,32 @@
-.editor{
+.editor {
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: row;
+}
+
+.editor-area {
+    width: 70vw;
+    height: 70vh;
+    padding: 10px;
+    margin-left: 8vw;
+    margin-top: 30px;
+    border: 2px solid #F2BFA4;
+    outline: none;
+}
+
+.editor-area div,
+.editor-area p {
+    text-indent: 2em;
+    margin-bottom: 10px;
+}
+
+.editor-main {
+    h2 {
+        font-size: 80px;
+        text-align: center;
+        font-family: 'Times New Roman', serif;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
 }
